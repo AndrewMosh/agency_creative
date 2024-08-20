@@ -227,9 +227,6 @@ select,
 a {
     -webkit-tap-highlight-color: transparent;
     cursor: pointer;
-	&:visited {
-		color: inherit;
-	}
 }
 
 input[type="submit"] {
