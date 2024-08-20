@@ -4,10 +4,6 @@
 @import "./mixin/position";
 @import "./mixin/button";
 @import "./mixin/responsive";
-
-
-
-
 @import "./fonts";
 @import "./setting/variables";
 @import "./setting/main";
@@ -15,3 +11,8 @@
 @import './elements/header';
 @import './elements/menu';
 @import './elements/button';
+
+
+@import '@Sections/intro/intro';
+@import '@Sections/about/about';
+@import '@Sections/services/services';
