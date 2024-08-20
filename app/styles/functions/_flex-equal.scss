@@ -1,0 +1,5 @@
+@function flex-equal($basis: auto, $grow: 1, $shrink: 1) {
+	@return (
+	  flex: $grow $shrink $basis
+	);
+  }

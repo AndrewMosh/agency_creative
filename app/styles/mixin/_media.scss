@@ -1,0 +1,10 @@
+@mixin media($breakpoint) {
+	@if map-has-key($breakpoints, $breakpoint) {
+	  $value: map-get($breakpoints, $breakpoint);
+	  @media (max-width: $value) {
+		@content;
+	  }
+	} @else {
+	  @warn "Breakpoint #{$breakpoint} не найден в карте breakpoints.";
+	}
+  }

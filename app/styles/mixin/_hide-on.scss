@@ -1,0 +1,16 @@
+@mixin hide-on($breakpoint) {
+	@if map-has-key($breakpoints, $breakpoint) {
+	  $value: map-get($breakpoints, $breakpoint);
+	  @media (max-width: $value) {
+		display: none;
+	  }
+	} @else {
+	  @warn "Breakpoint #{$breakpoint} не найден в карте breakpoints.";
+	}
+  }
+  
+ 
+//   .hidden-on-mobile {
+// 	@include hide-on('mobile');
+//   }
+  

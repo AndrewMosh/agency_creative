@@ -1,0 +1,14 @@
+@mixin spacing($property, $size-mobile, $size-tablet: $size-mobile, $size-desktop: $size-tablet) {
+	#{$property}: $size-mobile;
+  
+	@media (min-width: 768px) {
+	  #{$property}: $size-tablet;
+	}
+  
+	@media (min-width: 1024px) {
+	  #{$property}: $size-desktop;
+	}
+  }
+  
+
+//   @include spacing(margin, 10px, 20px, 30px);

@@ -1,0 +1,41 @@
+// FONT-SIZE
+
+$font-size-navigation:18px;
+$font-size-text:20px;
+$font-size-footer:22px;
+$font-size-h3:24px;
+$font-size-h2:55px;
+$font-size-h1:64px;
+$font-size-h1-mobile:28px;
+
+// LINE HEIGHT
+
+$line-height-title: 87px;
+$line-height-title-mobile: 38px;
+$line-height-text: 32px;
+$line-height-text-mobile: 24px;
+$line-height-subtitle: 130%;
+$line-height-testimonials: 28px;
+$line-height-testimonials-mobile: 24px;
+
+// FONTS
+$fontMain: "Nunito Regular";
+$fontSecondary:'Quicksand Regular';
+
+// COLORS
+$color-background:#FDFFFF;
+$color-background-secondary: rgb(56, 54, 56);
+$color-text: #464646;
+$color-text-secondary: #FFFFFF;
+$color-title:#1D1D1D;
+$color-primary: #377DFF;
+
+// TRANSITIONS
+$transition: 0.25s;
+
+// BREAKPOINTS
+$breakpoints: (
+  'small': 480px,
+  'medium': 768px,
+  'large': 1024px
+);

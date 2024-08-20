@@ -1,0 +1,53 @@
+.header {
+	margin-top: 72px;
+	
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+		display: flex;
+		align-items: center;
+	}
+
+	&__logo-text {
+		display: flex;
+		flex-direction: column;
+		margin-left: 10px;
+		line-height: $line-height-text-mobile;
+	}
+
+	&__logo-title {
+		font-size: $font-size-text;
+		font-weight: 700;
+	}
+
+	&__logo-subtitle {
+		font-size: 16px;
+		font-weight: 400;
+	}
+
+	&__menu {
+		@include responsive('medium') {
+			display: none;
+		}
+	}
+
+	&__contacts {
+		width: 188px;
+		font-size: 16px;
+
+		@include responsive('medium') {
+			display: none;
+		}
+	}
+	
+	&__burger {
+		display: none;
+		@include responsive('medium') {
+			display: block;
+		}
+	}
+}

@@ -1,0 +1,19 @@
+.button {
+	transition: $transition;
+	
+	&--transparent {
+		@include button-style($color-text-secondary, $color-primary, 1px solid $color-primary);
+
+		&:hover {
+			@include button-style($color-primary, $color-text-secondary);
+		}
+	}
+
+	&--blue {
+		@include button-style($color-primary, $color-text-secondary);
+
+		&:hover {
+			@include button-style($color-text-secondary, $color-primary, 1px solid $color-primary);
+		}
+	}	
+}
